@@ -1,6 +1,6 @@
 import { Temperature } from "./temperature";
 
 export const TEMPERATURES: Temperature[] = [
-    { aquarium: "Salon", temperature: 23},
-    { aquarium: "Sypialnia", temperature: 25.3}
+    { id: 1, aquarium: "Salon", temperature: 23},
+    { id: 2, aquarium: "Sypialnia", temperature: 25.3}
 ];
