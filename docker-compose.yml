@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  aquarium-frontend:
+    container_name: aquarium-frontend
+    platform: linux/arm/v7
+    build:
+      context: ./frontend
+
+  nginx:
+    container_name: middlenginx
+    image: nginx:stable-alpine3.17
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.middle.conf:/etc/nginx/conf.d/default.conf:rw
